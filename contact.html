@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Flowmont</title>
+<meta name="description" content="Get in touch with Flowmont. Share your name, business, and a rough revenue range, exact figures aren't needed to start.">
+<link rel="icon" href="assets/flowmont-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/flowmont-logo-full.png" alt="Flowmont">
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services &amp; Pricing</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn btn-primary btn-small">Get the Clarity Report</a>
+    </nav>
+    <button class="nav-menu-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="reveal">Let's look at your numbers.</h1>
+      <p class="reveal">Tell us a bit about your business. Rough figures are completely fine, we just need a starting point.</p>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-layout">
+
+        <div class="contact-form-card reveal">
+          <form id="contactForm" action="https://formspree.io/f/flowmont11@gmail.com" method="POST">
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-row">
+              <label for="business">Business name</label>
+              <input type="text" id="business" name="business" required>
+            </div>
+            <div class="form-row">
+              <label for="revenue">Rough revenue range <span class="hint">(estimates are fine)</span></label>
+              <select id="revenue" name="revenue_range" required>
+                <option value="" disabled selected>Select a range</option>
+                <option value="Pre-revenue">Pre-revenue / idea stage</option>
+                <option value="Under 5L">Under ₹5L / year</option>
+                <option value="5L-25L">₹5L to ₹25L / year</option>
+                <option value="25L-1Cr">₹25L to ₹1Cr / year</option>
+                <option value="1Cr+">₹1Cr+ / year</option>
+                <option value="Not sure">Not sure yet</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="message">Anything else we should know <span class="hint">(optional)</span></label>
+              <textarea id="message" name="message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">Send</button>
+            <p class="form-status" id="formStatus"></p>
+          </form>
+        </div>
+
+        <div class="contact-side reveal">
+          <div class="contact-info-card">
+            <h4>Chat on WhatsApp</h4>
+            <p>Prefer to talk it through first? Message us directly.</p>
+            <a href="https://wa.me/919920266222" target="_blank" rel="noopener" class="btn btn-primary whatsapp-btn">Chat on WhatsApp</a>
+          </div>
+          <div class="contact-info-card">
+            <h4>Email</h4>
+            <p>For anything you'd rather write out in full.</p>
+            <a href="mailto:flowmont11@gmail.com" class="contact-value">flowmont11@gmail.com</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <img src="assets/flowmont-logo-full.png" alt="Flowmont">
+    <nav class="footer-links">
+      <a href="services.html">Services &amp; Pricing</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="footer-copy">© 2026 Flowmont. Financial clarity, not accounting.</div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
