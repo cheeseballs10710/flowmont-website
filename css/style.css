@@ -745,11 +745,6 @@ section {
   color: var(--text-muted);
 }
 
-.plan-price .amount .onwards {
-  font-size: 22px;
-  color: var(--gold-deep);
-}
-
 .plan-turnaround {
   display: inline-flex;
   align-items: center;
