@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact — Flowmont</title>
+<title>Contact | Flowmont</title>
 <meta name="description" content="Get in touch with Flowmont. Share your name, business, and a rough revenue range, exact figures aren't needed to start.">
 <link rel="icon" href="assets/flowmont-mark.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,10 +20,10 @@
     </a>
     <nav class="nav-links" id="navLinks">
       <a href="index.html">Home</a>
-      <a href="services.html">Services &amp; Pricing</a>
+      <a href="services.html">Services</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
-      <a href="contact.html" class="btn btn-primary btn-small">Get the Clarity Report</a>
+      <a href="contact.html" class="btn btn-primary btn-small">Book an intro call</a>
     </nav>
     <button class="nav-menu-toggle" id="navToggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -35,8 +35,8 @@
 
   <section class="page-hero">
     <div class="container">
-      <h1 class="reveal">Let's look at your numbers.</h1>
-      <p class="reveal">Tell us a bit about your business. Rough figures are completely fine, we just need a starting point.</p>
+      <h1 class="reveal">Book an intro call.</h1>
+      <p class="reveal">Tell us a bit about your business and we'll set up a short call. Rough figures are completely fine, we just need a starting point.</p>
     </div>
   </section>
 
@@ -71,6 +71,15 @@
               </select>
             </div>
             <div class="form-row">
+              <label for="tier">Which tier interests you? <span class="hint">(optional)</span></label>
+              <select id="tier" name="tier">
+                <option value="Not sure yet" selected>Not sure yet</option>
+                <option value="track">Track: monthly numbers and a review call</option>
+                <option value="model">Model: unit economics, forecasts, and scenarios</option>
+                <option value="advise">Advise: a finance lead on call</option>
+              </select>
+            </div>
+            <div class="form-row">
               <label for="message">Anything else we should know <span class="hint">(optional)</span></label>
               <textarea id="message" name="message"></textarea>
             </div>
@@ -102,7 +111,7 @@
   <div class="container footer-inner">
     <img src="assets/flowmont-logo-full.png" alt="Flowmont">
     <nav class="footer-links">
-      <a href="services.html">Services &amp; Pricing</a>
+      <a href="services.html">Services</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>

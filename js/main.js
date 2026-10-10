@@ -101,6 +101,17 @@
   var contactForm = document.getElementById('contactForm');
   if (contactForm) {
     var formStatus = document.getElementById('formStatus');
+
+    // Preselect the tier when arriving from a "Discuss this tier" button
+    var tierSelect = document.getElementById('tier');
+    var tierParam = new URLSearchParams(window.location.search).get('tier');
+    if (tierSelect && tierParam) {
+      var hasOption = Array.prototype.some.call(tierSelect.options, function (o) {
+        return o.value === tierParam;
+      });
+      if (hasOption) tierSelect.value = tierParam;
+    }
+
     contactForm.addEventListener('submit', function (e) {
       e.preventDefault();
       var submitBtn = contactForm.querySelector('.form-submit');
